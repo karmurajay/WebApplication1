@@ -16,16 +16,23 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(num1.Text);
-            int b = int.Parse(num2.Text); 
-            int c = int.Parse(num3.Text);
-            int sum = a + b + c;
-            Response.Write("the sum is:"+sum);
+            string name = TextBox1.Text;
+            //int a = Convert.ToInt32(num1.Text);
+            //int b = int.Parse(num2.Text); 
+            //int c = int.Parse(num3.Text);
+            //int sum = a + b + c;
+            //Response.Write("the sum is:"+sum);
+            Response.Write("   name is:"+name);
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Write("hello world welcome!!1");
         }
     }
 }
